@@ -1,6 +1,6 @@
 ---
 date: 2013-11-05 12:00:00 PST
-title: Appending to a List and Trimming to Max Size
+title: MapReduce for LevelUp.
 tags: node, leveldb, levelup
 ---
 
