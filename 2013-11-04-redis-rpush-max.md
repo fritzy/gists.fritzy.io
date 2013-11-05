@@ -28,3 +28,5 @@ Now when you look at the contents:
     1) "hello2"
     2) "hello3"
     3) "hello4"
+
+Thanks to [Pierre Chapuis @pchapuis](http://twitter.com/pchapuis) for showing that I could make this even simpler.
