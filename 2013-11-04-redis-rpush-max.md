@@ -20,15 +20,14 @@ Example:
     EVAL "script here" 1 mylist "hello2" 3
     EVAL "script here" 1 mylist "hello3" 3
     EVAL "script here" 1 mylist "hello4" 3
-
   
-
+  
 Now when you look at the contents:
 
     redis 127.0.0.1:6379> lrange mylist 0 -1
     1) "hello2"
     2) "hello3"
     3) "hello4"
-
+  
   
 Thanks to [Pierre Chapuis @pchapuis](http://twitter.com/pchapuis) for showing that I could make this even simpler.
