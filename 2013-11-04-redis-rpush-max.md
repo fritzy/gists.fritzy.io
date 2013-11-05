@@ -1,8 +1,8 @@
-# author: Nathan Fritz
-# author_slug: fritzy
-# date: 2013-11-04 12:00:00
-# title: Appending to a List and Trimming to Max Size
-# tags: redis, lua
+---
+date: 2013-11-04 12:00:00
+title: Appending to a List and Trimming to Max Size
+tags: redis lua
+---
 
 I've decided to start publishing a pattern or short snippet of code every day.
 Ideally this will help get my creative juices flowing, add some value to my name, and give me material to publish in various forms.
@@ -20,6 +20,7 @@ Example:
     EVAL "script here" 1 mylist "hello2" 3
     EVAL "script here" 1 mylist "hello3" 3
     EVAL "script here" 1 mylist "hello4" 3
+
 
 Now when you look at the contents:
 
