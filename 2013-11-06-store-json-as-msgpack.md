@@ -16,5 +16,5 @@ Since we have bindings to both, we can potentially save space, but keep the fami
     > GET testdict
     "\x81\xa5hello\xc3"
 
-    > Eval "[the get script]" 1 testdict
+    > EVAL "[the get script]" 1 testdict
     '{"hello":true}'
