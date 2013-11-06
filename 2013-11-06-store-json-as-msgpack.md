@@ -10,11 +10,11 @@ Since we have bindings to both, we can potentially save space, but keep the fami
 
 <script src="https://gist.github.com/fritzy/7340641.js"></script>
 
-    > EVAL "[the set script]" 1 testdict '{"hello": true}'
+    > EVAL "[the set script]" 1 testkey '{"hello": true}'
     OK
 
-    > GET testdict
+    > GET testkey
     "\x81\xa5hello\xc3"
 
-    > EVAL "[the get script]" 1 testdict
+    > EVAL "[the get script]" 1 testkey
     '{"hello":true}'
