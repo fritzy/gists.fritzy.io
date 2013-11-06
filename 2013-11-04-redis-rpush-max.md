@@ -2,6 +2,7 @@
 date: 2013-11-04 12:00:00 PST
 title: Appending to a List and Trimming to Max Size
 tags: redis, lua
+type: text/html
 ---
 
 I've decided to start publishing a pattern or short snippet of code every day.

@@ -2,6 +2,7 @@
 date: 2013-11-05 12:00:00 PST
 title: MapReduce for LevelUp.
 tags: node, leveldb, levelup
+type: text/html
 ---
 
 This is a Map-Reduce implementation for LevelUp.
