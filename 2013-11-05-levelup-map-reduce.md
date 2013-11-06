@@ -1,6 +1,6 @@
 ---
 date: 2013-11-05 12:00:00 PST
-title: MapReduce for LevelUp.
+title: Node.js: MapReduce for LevelUp.
 tags: node, leveldb, levelup
 type: text/html
 ---

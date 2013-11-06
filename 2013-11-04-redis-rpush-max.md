@@ -1,6 +1,6 @@
 ---
 date: 2013-11-04 12:00:00 PST
-title: Appending to a List and Trimming to Max Size
+title: Redis Lua: Appending to a List and Trimming to Max Size
 tags: redis, lua
 type: text/html
 ---
