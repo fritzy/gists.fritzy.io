@@ -1,6 +1,6 @@
 ---
 date: 2013-11-06 10:00:00 PST
-title: Redis Lua: Store JSON as MSGPack and Retrive MSGPack as JSON
+title: Redis Lua: Store JSON as MessagePack and Retrieve MessagePack as JSON
 tags: redis, lua
 ---
 
