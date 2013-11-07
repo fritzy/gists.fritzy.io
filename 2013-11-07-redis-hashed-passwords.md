@@ -41,3 +41,16 @@ There are a few things to note here.
 * We could use anything as the dynamic salt, like the user's phone number, but you'd have to get the user's password and re-generate the hash everytime this information is changed.
 * I'm using an error-first return pattern for these scripts. The first argument is falsey if there is no error, and a string if there is an error. This is a common JavaScript pattern, and useful in Redis Lua scripts.
 * The password length check is actually counting bytes.
+
+## Update:
+
+Again, [Pierre Chapuis @pchapuis](http://twitter.com/pchapuis) has some good feedback.
+He references [http://codahale.com/how-to-safely-store-a-password/](http://codahale.com/how-to-safely-store-a-password/) which argues against using typical hashing algorithms for hashing.
+Since someone who has your redis db also has your Lua scripts, the salts are rather available to the cracker, even the dynamic ones.
+
+We can easily argue that bcrypt/scrypt is the better way to go.
+Unfortunately, it's not available in Redis, but that's not a terribly valid reason to discount it.
+
+This approach is much better than nothing, but perhaps outdated.
+
+As I'm writing this, [Alex Gaynor @alex\_gaynor](http://twitter.com/alex_gaynor) just gave the [same advice](https://twitter.com/alex_gaynor/status/398584652811628544).
