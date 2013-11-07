@@ -5,6 +5,8 @@ tags: redis, lua
 type: text/html
 ---
 
+**See the update at the bottom: this approach isn't secure (but I still think it's interesting).**
+
 Storing passwords in plain text is bad.
 Time and time again, databases get hacked and passwords get leaked.
 Hashing a password creates a consistent string from a password that you can store, but isn't the password, and isn't easily reversed.
