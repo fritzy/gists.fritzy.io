@@ -37,7 +37,7 @@ This gives us a great way to store and check hashed passwords.
 
 There are a few things to note here.
 
-* The schema for creating your pre-hashed string isn't important except that you need to consistent.
+* The schema for creating your pre-hashed string isn't important except that you need to be consistent.
 * We could use anything as the dynamic salt, like the user's phone number, but you'd have to get the user's password and re-generate the hash everytime this information is changed.
 * I'm using an error-first return pattern for these scripts. The first argument is falsey if there is no error, and a string if there is an error. This is a common JavaScript pattern, and useful in Redis Lua scripts.
 * The password length check is actually counting bytes.
