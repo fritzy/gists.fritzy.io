@@ -22,3 +22,5 @@ This script takes a Hash key and returns a collated JSON object of key/values.
 
 
 Keep in mind that there are actually a lot of Redis commands that return key/values this way, not just HGETALL, and that I'm returning JSON just for the eexample's sake.
+
+Update: [Pierre Chapuis @pchapuis](http://twitter.com/pchapuis) suggested using a for-step loop rather than a for-each loop.
