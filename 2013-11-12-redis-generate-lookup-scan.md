@@ -17,14 +17,14 @@ Unfortunately, this approach will give the keys in different iterated results on
 
 This example will fail, only because HSET (any writing command) isn't allowed after using a non-deterministic command (in this case, SCAN).
 
-<script src="https://gist.github.com/fritzy/7436527?file=generatelookup.lua"></script>
+<script src="https://gist.github.com/fritzy/7436527.js?file=generatelookup.lua"></script>
 
     [Error: ERR Error running script (call to f_a707d1274859064311a626bf76f47b58f3764c62): @user_script:12: @user_script: 12: Write commands not allowed after non deterministic commands ]
 
 This means that we'll have to do this from the client.
 Here is an example of doing this in Node.
 
-<script src="https://gist.github.com/fritzy/7436527?file=generatelookup.js"></script>
+<script src="https://gist.github.com/fritzy/7436527.js?file=generatelookup.js"></script>
 
 Basically, in both cases, we call `SCAN [iter]` starting with zero, until iter is 0 again.
 For each key, we take the designated attribute, and we set that as the lookup key, and the scanned key as the lookup value.
