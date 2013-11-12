@@ -11,7 +11,7 @@ If you can't do that, you may be better using a relational database.
 Generating lookup tables and indexes can be helpful for finding the key you're looking for.
 For example, if you store users as user:id, but you'd also like to be able to look them up by a username, you can generate a lookup table.
 
-The SCAN command allows us to iterate through keys without getting them all at once and really slowing down the server.
+The [SCAN command](http://redis.io/commands/scan) allows us to iterate through keys without getting them all at once and really slowing down the server.
 It does this by breaking up the hash of keys into equal spaces and iterating them.
 Unfortunately, this approach will give the keys in different iterated results on different servers, because the hash is seeded randomly, making SCAN a non-deterministic command.
 
