@@ -16,6 +16,9 @@ You could then query the same keys in Riak or restore it back to Redis at any ti
 Redisscan does most of the hard work of diving into each value of Redis keys.
 The biggest trick here is preserving List ordering when restoring back to Redis.
 
+This approach is not atomic, so keys can change out from under it.
+A better approach might be an rdb file analyzer, but this allows us to scan production data without an rdb file using the new `SCAN` commands.
+Your use case may not be appropriate for this approach.
+
 When I've added advanced pattern matching and Riak indexing, I'll turn this into a standalone project.
 For now this is just a proof-of-concept to share.
-
