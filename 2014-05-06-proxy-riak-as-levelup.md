@@ -7,7 +7,7 @@ type: text/html
 
 [Riak](http://basho.com/riak/) is a clustered key-value database that applies "AP" from the [CAP Theorem](http://en.wikipedia.org/wiki/CAP_theorem).
 It has HTTP and Protocol Buffers APIs, but can be a little bit cumbersome to browse keys for debugging.
-I've been getting used to [hij1nx's lev](https://github.com/hij1nx/lev) to in my regular debugging for [levelup](https://github.com/rvagg/node-levelup) and thought it would be handy to use the same tool for Riak.
+I've been getting used to [hij1nx's lev](https://github.com/hij1nx/lev) for debugging [levelup](https://github.com/rvagg/node-levelup) and thought it would be handy to use the same tool for Riak.
 
 Since [Nathan LaFreniere](https://github.com/nlf) wrote [riakdown](https://github.com/nlf/riakdown), a Riak backend for level, it wasn't too hard. 
 Essentially just mix [multilevel](https://github.com/juliangruber/multilevel) (for a network enabled levelup) with riakdown, and away you go!
