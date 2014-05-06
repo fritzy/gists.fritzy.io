@@ -9,7 +9,7 @@ type: text/html
 It has HTTP and Protocol Buffers APIs, but can be a little bit cumbersome to browse keys for debugging.
 I've been getting used to [hij1nx's lev](https://github.com/hij1nx/lev) for debugging [levelup](https://github.com/rvagg/node-levelup) and thought it would be handy to use the same tool for Riak.
 
-Since [Nathan LaFreniere](https://github.com/nlf) wrote [riakdown](https://github.com/nlf/riakdown), a Riak backend for level, it wasn't too hard. 
+Since [Nathan LaFreniere](https://github.com/nlf) wrote [riakdown](https://github.com/nlf/riakdown), a Riak backend for level, it wasn't too hard.
 Essentially just mix [multilevel](https://github.com/juliangruber/multilevel) (for a network enabled levelup) with riakdown, and away you go!
 
 <script src="https://gist.github.com/fritzy/ae8a8f3de86dbe842ce0.js"></script>
@@ -48,5 +48,9 @@ level2riak --bucket somebucket
 
 ###Note
 
-As of this writing, I've made an update to lev, but I'm waiting on hij1nx to publish to npm.
+As of this writing, I've made an update to lev, ~~~but I'm waiting on hij1nx to publish to npm~~~.
 The manifest is no longer required, repl can handle remote connections, and I added --conns and --use for listing and using preconfigured connections.
+
+### Update:
+
+[hij1nx](https://twitter.com/hij1nx) just publish [lev@2.1.2](https://www.npmjs.org/package/lev).
