@@ -19,5 +19,11 @@ Really, what we want is the last byte, so we mask it with AND 0xFF.
 
 If there is a more direct way to do this in JavaScript, please [let me know](https://twitter.com/intent/tweet?screen_name=fritzy).
 
-<script src="https://gist.github.com/fritzy/236b3c727264ded700aa.js"></script>
+<script src="https://gist.github.com/fritzy/236b3c727264ded700aa.js?file=riak_reverse_put.js" type="text/javascript"></script>
 
+## Update:
+
+[@brycebaril](https://twitter.com/brycebaril) points out that things get weird with unicode characters,
+and that we can reduce the number of operations by doing 255 - value, rather than NOT+AND.
+
+<script src="https://gist.github.com/fritzy/236b3c727264ded700aa.js?file=buffer_reversestring.js" type="text/javascript"></script>
