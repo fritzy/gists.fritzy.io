@@ -5,7 +5,7 @@ tags: node.js, level, riak
 type: text/html
 ---
 
-While developing the prototype for what became [@nlf's](https://github.com/nlf) [riakdown](https://github.com/nlf/riakdown),
+While developing the prototype for what became [@quitlahok's](https://twitter.com/quitlahok) [riakdown](https://github.com/nlf/riakdown),
 I quickly realized that while Riak can give keys back in lexical order of indexes, it cannot do the same in reverse.
 We needed reverse support in order to support the [levelup](https://github.com/rvagg/levelup) interface.
 
