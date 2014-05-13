@@ -48,7 +48,7 @@ level2riak --bucket somebucket
 
 ###Note
 
-As of this writing, I've made an update to lev, ~~~but I'm waiting on hij1nx to publish to npm~~~.
+As of this writing, I've made an update to lev, ~~but I'm waiting on hij1nx to publish to npm~~.
 The manifest is no longer required, repl can handle remote connections, and I added --conns and --use for listing and using preconfigured connections.
 
 ### Update:
