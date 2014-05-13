@@ -27,3 +27,8 @@ If there is a more direct way to do this in JavaScript, please [let me know](htt
 and that we can reduce the number of operations by doing 255 - value, rather than NOT+AND.
 
 <script src="https://gist.github.com/fritzy/236b3c727264ded700aa.js?file=buffer_reversestring.js" type="text/javascript"></script>
+
+## Update:
+
+[@quitlahok](https://twitter.com/quitlahok) noted that [riakdown](https://github.com/nlf/riakdown) doesn't actually produce these extra indexes (although my prototype did).
+Instead he uses a map-reduce query to accomplish this.
