@@ -1,7 +1,7 @@
 ---
 date: 2014-08-14 12:00:00 PST
-title: Using Postgres as a Document 
-tags: javascript, dom
+title: Using Postgres as a Document Store
+tags: postgres, database, dulcimer
 type: text/html
 ---
 
