@@ -58,5 +58,5 @@ Using these functions are as easy as `SELECT`ing them.
 SELECT * FROM documentstore_get_by_field('lastname', 'myusers', 'Fritz', 10);
 ```
 
-Let me now on [@fritzy](http://twitter.com/fritzy) Twitter if you have any questions, fixes, or comments.
+Let me know on [@fritzy](http://twitter.com/fritzy) Twitter if you have any questions, fixes, or comments.
 I currently have availability for consulting work through [&yet](https://andyet.com).
